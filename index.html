@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagnik Patra | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',
+            secondary: '#1e293b',
+            accent: '#38bdf8',
+            button1: '#3b82f6',
+            button2: '#10b981',
+            button3: '#f59e0b',
+            button4: '#ef4444',
+            textPrimary: '#f1f5f9',
+            textSecondary: '#94a3b8'
+          },
+          backgroundImage: {
+            'tech-pattern': "url('images/creative-geometric-design-space_53876-89787.avif')"
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-tech-pattern bg-cover bg-fixed text-textPrimary font-sans">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full bg-secondary bg-opacity-90 shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-accent">Sagnik Patra</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#resume" class="hover:text-accent">Resume</a>
+        <a href="#projects" class="hover:text-accent">Projects</a>
+        <a href="https://www.linkedin.com/in/sagnik2212/" target="_blank" class="hover:text-accent">LinkedIn</a>
+        <a href="#contact" class="hover:text-accent">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="flex flex-col items-center justify-center h-screen text-center animate-fadeIn bg-gradient-to-b from-primary/80 to-secondary/80">
+    <img src="images/Image7.jpg" alt="Profile Photo" class="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-accent">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">Sagnik Patra</h1>
+    <p class="text-xl md:text-2xl italic text-accent mb-6">AI/ML Engineer | Researcher | Innovator</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#resume" class="px-6 py-3 rounded-full bg-button1 text-white font-semibold hover:opacity-90">Resume</a>
+      <a href="#projects" class="px-6 py-3 rounded-full bg-button2 text-white font-semibold hover:opacity-90">View Projects</a>
+      <a href="https://www.linkedin.com/in/sagnik2212/" target="_blank" class="px-6 py-3 rounded-full bg-button3 text-white font-semibold hover:opacity-90">LinkedIn</a>
+      <a href="#contact" class="px-6 py-3 rounded-full bg-button4 text-white font-semibold hover:opacity-90">Contact</a>
+    </div>
+  </section>
+
+  <!-- Resume Page -->
+  <section id="resume" class="p-8 md:p-16 bg-secondary bg-opacity-90 rounded-3xl shadow-lg mx-4 md:mx-20 my-8">
+    <h2 class="text-4xl font-bold mb-6 text-center text-accent">Resume</h2>
+    <p class="max-w-3xl mx-auto text-center text-lg leading-relaxed text-textSecondary mb-6">
+      Explore my professional journey, skills, and experiences. You can view or download my resume below.
+    </p>
+    <div class="flex flex-col items-center">
+      <iframe src="https://drive.google.com/file/d/1oD7eKd0bRsczA4449eAQSs-E57chAQ7g/preview" width="100%" height="600" class="rounded-lg shadow-lg"></iframe>
+      <a href="https://drive.google.com/file/d/1oD7eKd0bRsczA4449eAQSs-E57chAQ7g/view?usp=sharing" target="_blank" class="mt-4 px-6 py-3 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Projects Page -->
+  <section id="projects" class="p-8 md:p-16">
+    <h2 class="text-4xl font-bold mb-10 text-center text-accent">Projects</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Project Cards -->
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/what_is_image_Processing.avif" alt="Hyperspectral Image Processing" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Hyperspectral Image Processing</h3>
+          <p class="text-textSecondary mb-4">Hybrid model for feature selection and classification in hyperspectral datasets like Indian Pines.</p>
+          <a href="https://github.com/sagnik1-patra/Band-Selection" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/1589830344186.png" alt="Face Recognition Model" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Face Recognition Model</h3>
+          <p class="text-textSecondary mb-4">Deep learning-based face recognition system for biometric authentication and security applications.</p>
+          <a href="https://github.com/sagnik1-patra/Face-Detection" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/water-quality-blog-post-img.jpg" alt="Water Quality Index" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Water Quality Index (WQI)</h3>
+          <p class="text-textSecondary mb-4">Predicting WQI using advanced machine learning algorithms for environmental monitoring.</p>
+          <a href="https://github.com/sagnik1-patra/Water-Quality-Indexing" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/TLMS_20240104_1200x628-1.png" alt="Schedule Concurrency Tracker" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Schedule Concurrency Tracker</h3>
+          <p class="text-textSecondary mb-4">A Golang-based tool for tracking and managing concurrent processes efficiently.</p>
+          <a href="https://github.com/sagnik1-patra/Golang_project" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/aerial-view-selfdriving-autonomous-electric-260nw-2161187235.webp" alt="Future Road Navigator" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Future Road Navigator</h3>
+          <p class="text-textSecondary mb-4">Navigation system with predictive AI for future road conditions and traffic management.</p>
+          <a href="https://github.com/sagnik1-patra/future-road-navigator" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+      <div class="bg-secondary bg-opacity-90 rounded-xl overflow-hidden shadow-lg hover:scale-105 transform transition relative">
+        <img src="images/3a50174d-online-to-do-list.jpg" alt="Interactive To-Do List" class="w-full">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2 text-accent">Interactive To-Do List</h3>
+          <p class="text-textSecondary mb-4">A modern, user-friendly to-do list app for managing tasks and boosting productivity.</p>
+          <a href="https://github.com/sagnik1-patra/Interactive-organizer-to-do-list-" target="_blank" class="inline-block px-4 py-2 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Page -->
+  <section id="contact" class="p-8 md:p-16 bg-secondary bg-opacity-90 rounded-3xl shadow-lg mx-4 md:mx-20 my-8">
+    <h2 class="text-4xl font-bold mb-6 text-center text-accent">Contact Me</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <form class="space-y-4 bg-primary p-6 rounded-xl shadow-lg">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-secondary text-textPrimary">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-secondary text-textPrimary">
+        <textarea placeholder="Your Message" class="w-full p-3 rounded-lg bg-secondary text-textPrimary"></textarea>
+        <button type="submit" class="px-6 py-3 bg-accent text-primary font-semibold rounded-lg hover:opacity-90">Send Message</button>
+      </form>
+      <div class="space-y-4 text-lg text-textSecondary">
+        <p><i class="fas fa-phone-alt text-accent"></i> +91 8972252624</p>
+        <p><i class="fas fa-envelope text-accent"></i> sagnik.patra2000@gmail.com</p>
+        <p><i class="fab fa-linkedin text-accent"></i> <a href="https://www.linkedin.com/in/sagnik2212/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center bg-primary bg-opacity-90">
+    <p class="text-textSecondary">&copy; 2025 Sagnik Patra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
